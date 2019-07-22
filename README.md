@@ -1,5 +1,8 @@
 # watson-speech-for-text-java-sdk
 How to run Watson speech for text in java
+1 code for java to run speech for text
+2 orignal code from Watson repository
+3how i found out and more...
 
 Follow the instructions from watson https://github.com/watson-developer-cloud/java-sdk#before-you-begin then come back here
 
@@ -44,3 +47,6 @@ RecognizeOptions options = new RecognizeOptions.Builder()
 SpeechRecognitionResults transcript = service.recognize(options).execute().getResult();
 System.out.println(transcript);
 ```
+
+3 This was a solution I found on my own when asking it on StackOverflow. Looking at the IBM doc for Watson API(SDK) was how I found out what the Watson repository was missing. Note that the API(SDK) guide for curl seems to go faster when comparing with java. In my experience, you also see the duration for how long for the audio to be done which java SDK API is missing by default. That is when running in this code. But I think you can add it to java in some way.
+--------------------------------------------------------------
