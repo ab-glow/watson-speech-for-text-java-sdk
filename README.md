@@ -1,11 +1,11 @@
 # watson-speech-for-text-java-sdk
 How to run Watson speech for text in java
 
-1 code for java to run speech for text, 1.1 code needs public main with filenotfoundexception
+1 Code for java to run speech for text, 1.1 code needs public main with filenotfoundexception
 
-2 orignal code from Watson repository
+2 Orignal code from Watson repository
 
-3how i found out and more...
+3 How i found out and more...
 
 Follow the instructions from watson https://github.com/watson-developer-cloud/java-sdk#before-you-begin then come back here
 
