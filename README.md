@@ -9,7 +9,7 @@ How to run Watson speech for text in java
 
 Follow the instructions from watson https://github.com/watson-developer-cloud/java-sdk#before-you-begin then come back here
 
-1 For speech to text watson api to work in java in my case so is this code below of running working.
+1 For speech to text watson api to work in java, in my case so is this code below working when you try to run it.
 ---------------------------------------------------------------------
 ```
 SpeechToText service = new SpeechToText();
@@ -29,9 +29,9 @@ service.setEndPoint("<URL>");
  SpeechRecognitionResults transcript = service.recognize(options).execute().getResult();
  System.out.println(transcript);
 ```
-1:1 Public main is required with throws FileNotFoundException
+1:1 Note that Public main is required with throws FileNotFoundException
 -------------------------------------------------------------------
-2 below here is the origianal code before (which did not work for me) for comparison  purpose
+2 below is the origianal code which did not work for me for (comparison purpose)
 ----------------------------------------------------------------------------------------------
 ```
 SpeechToText service = new SpeechToText();
@@ -51,5 +51,5 @@ SpeechRecognitionResults transcript = service.recognize(options).execute().getRe
 System.out.println(transcript);
 ```
 
-3 This was a solution I found on my own when asking it on StackOverflow. Looking at the IBM doc for Watson API(SDK) was how I found out what the Watson repository was missing. Note that the API(SDK) guide for curl seems to go faster when comparing with java. In my experience, you also see the duration for how long for the audio to be done which java SDK API is missing by default. That is when running in this code. But I think you can add it to java in some way.
+3 This was a solution I found on my own when asking it on StackOverflow. Looking at the IBM doc for Watson API(SDK) was how I found out what the Watson repository was missing. Note that the API(SDK) guide for curl seems to go faster when comparing with java. In my experience, you also see the duration for how long for the audio to be done which java SDK API is not showing (by "default"). That is when running in this code. But I think you can add it to java in some way.
 --------------------------------------------------------------
